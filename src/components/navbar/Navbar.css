@@ -1,0 +1,75 @@
+nav{
+    width: 100%;
+    background: url('../../assets/header2.png');
+    color: navy;
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    font-weight: 600;
+}
+
+.redirect {
+    position: relative;
+    display: inline-block;
+    color: navy;
+    background: transparent;
+    text-decoration: none;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+.redirect::before,
+.redirect::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: navy;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+.redirect::before {
+    top: -8px; /* Adjust to ensure it's above the content */
+    transform: scaleX(0);
+}
+
+.redirect::after {
+    bottom: -8px; /* Adjust to ensure it's below the content */
+    transform: scaleX(0);
+}
+
+.redirect:hover::before,
+.redirect:hover::after {
+    transform: scaleX(1);
+}
+
+.logo{
+    height: 75px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-style: 16px;
+}
+.companyName{
+    color:navy;
+}
+
+
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 10px; 
+}
+
+
