@@ -35,12 +35,12 @@ nav{
 }
 
 .redirect::before {
-    top: -8px; /* Adjust to ensure it's above the content */
+    top: -8px; 
     transform: scaleX(0);
 }
 
 .redirect::after {
-    bottom: -8px; /* Adjust to ensure it's below the content */
+    bottom: -8px; 
     transform: scaleX(0);
 }
 
