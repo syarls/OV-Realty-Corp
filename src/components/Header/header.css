@@ -1,8 +1,79 @@
-.header{
+.header {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)),url('../../assets/header.jpg');
+    background: linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)), url('../../assets/header.jpg');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover; /* Adjusted to cover the header fully */
 
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding does not affect width */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Adjust this to fit your design */
+}
+
+.header-video,
+.header-description {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header-video {
+    position:relative;
+    top: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    border-radius: 50px;
+  }
+  
+  .header-video video {
+    width: auto;
+    height: 100%;
+    max-height: 500px;
+    transform: scale(2);
+  }
+  
+.header-description {
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    align-items: flex-start; /* Align content to the start of the container */
+    padding-left: 80px;
+    color:white;
+}
+
+.header-description h1 {
+    margin-top: 90px;
+}
+
+.header-description p {
+    margin: 20px 0 0 0; 
+}
+.txt1 {
+    color: skyblue;
+    font-size: 32px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    border-radius: 30px;
+    padding: 10px;
+    backdrop-filter: blur(10px); /* Adds the frosted glass blur effect */
+    border: 1px solid rgba(31, 67, 199, 0.2); /* Light border for better definition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow for depth */
+    text-align: center; /* Optional: centers text within the element */
+}
+
+.txt2{
+    font-size: 24px;
 }
